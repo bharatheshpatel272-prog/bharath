@@ -43,11 +43,11 @@ export function Countdown() {
   ]
 
   return (
-    <div className="flex flex-col gap-2">
+    <div className="flex flex-col items-center gap-2">
       <p className="text-xs font-semibold uppercase tracking-[0.18em] text-muted-foreground">
         Registrations close in
       </p>
-      <div className="flex gap-2" aria-live="off">
+      <div className="flex justify-center gap-2" aria-live="off">
         {units.map((unit) => (
           <div
             key={unit.label}

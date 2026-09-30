@@ -10,7 +10,7 @@ export function Hero() {
       className="relative overflow-hidden bg-[radial-gradient(ellipse_at_top_right,var(--color-secondary),transparent_60%)]"
     >
       <div className="mx-auto flex max-w-6xl flex-col gap-10 px-4 pt-10 pb-14 sm:px-6 lg:flex-row lg:items-center lg:gap-6 lg:pt-16 lg:pb-20">
-        <div className="flex flex-1 flex-col items-start gap-6">
+        <div className="flex flex-1 flex-col items-center gap-6 text-center">
           <div className="flex w-full flex-col items-center gap-1.5 text-center">
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-muted-foreground">
               Mysore Royal Education Trust
@@ -43,7 +43,7 @@ export function Hero() {
             November 2026 at MRIT, Mandya.
           </p>
 
-          <div className="flex w-full flex-col gap-3 sm:w-auto sm:flex-row">
+          <div className="flex w-full flex-col justify-center gap-3 sm:w-auto sm:flex-row">
             <Button
               size="lg"
               className="h-12 rounded-full px-6 text-base"
