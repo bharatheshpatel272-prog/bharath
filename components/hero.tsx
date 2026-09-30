@@ -11,7 +11,7 @@ export function Hero() {
     >
       <div className="mx-auto flex max-w-6xl flex-col gap-10 px-4 pt-10 pb-14 sm:px-6 lg:flex-row lg:items-center lg:gap-6 lg:pt-16 lg:pb-20">
         <div className="flex flex-1 flex-col items-start gap-6">
-          <div className="flex flex-col gap-1.5">
+          <div className="flex w-full flex-col items-center gap-1.5 text-center">
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-muted-foreground">
               Mysore Royal Education Trust
             </p>
