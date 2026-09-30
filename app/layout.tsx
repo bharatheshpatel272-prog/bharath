@@ -1,10 +1,19 @@
 import { Analytics } from '@vercel/analytics/next'
 import type { Metadata, Viewport } from 'next'
+import { Barlow_Condensed, Inter } from 'next/font/google'
 import './globals.css'
 
+const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
+const barlow = Barlow_Condensed({
+  subsets: ['latin'],
+  weight: ['500', '600', '700', '800'],
+  variable: '--font-barlow',
+})
+
 export const metadata: Metadata = {
-  title: 'Contact Us',
-  description: 'Get in touch with our team. We reply within one business day.',
+  title: 'MRIOTHON 3.0 | 28 Hour Hackathon at MRIT, Mandya',
+  description:
+    'MRIOTHON 3.0 is a 28 hour hackathon on 2nd and 3rd November 2026 at Mysuru Royal Institute of Technology, Mandya. Themes: AIoT and AI Integrated Full Stack using Python. Teams of 4, open to all branches.',
   generator: 'v0.app',
   icons: {
     icon: [
@@ -26,11 +35,8 @@ export const metadata: Metadata = {
 }
 
 export const viewport: Viewport = {
-  colorScheme: 'light dark',
-  themeColor: [
-    { media: '(prefers-color-scheme: light)', color: 'white' },
-    { media: '(prefers-color-scheme: dark)', color: 'black' },
-  ],
+  colorScheme: 'light',
+  themeColor: '#0f6b47',
 }
 
 export default function RootLayout({
@@ -39,7 +45,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${inter.variable} ${barlow.variable}`}>
       <body className="antialiased">
         {children}
         {process.env.NODE_ENV === 'production' && <Analytics />}

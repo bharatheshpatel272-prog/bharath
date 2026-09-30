@@ -121,7 +121,7 @@ function FormFields({
         label="Subject"
         state={state}
         input={(props) => (
-          <Input {...props} placeholder="How can we help?" maxLength={150} />
+          <Input {...props} placeholder="Question about MRIOTHON 3.0" maxLength={150} />
         )}
       />
 
@@ -139,7 +139,7 @@ function FormFields({
             {...props}
             rows={6}
             maxLength={MESSAGE_MAX}
-            placeholder="Tell us a bit about your project, timeline, and goals..."
+            placeholder="Ask about registration, team rules, themes, or the venue..."
             className="min-h-36 resize-y"
             onChange={(e) => setMessageLength(e.target.value.length)}
           />
